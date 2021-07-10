@@ -17,14 +17,14 @@
         	<h2>Create an account</h2>
         	<hr>
 
-        	<form method="POST" action="save_user.php">
+        	<form method="POST" action="save-members.php">
         		<div class="row">
         			<div class="col-md-6">
         				<label>Name</label><br>
         				<input type="text" name="person_name" class="form-control" required>
 
         				<label>Password</label><br>
-        				<input type="text" name="password" placeholder="form-control" class="form-control" required>
+        				<input type="text" name="password" class="form-control" required>
 
         				<label>Email_Address</label><br>
         				<input type="email" name="email_address" class="form-control" required>
@@ -46,7 +46,8 @@
 	                           $id = $value["ID"];
 	                           $name = $value["NAME"];
 
-	                           echo "<option value='$id'>$name</option>";
+	                           echo "
+	                           <option value='$id'>$name</option>";
 
 	                        }
 
@@ -58,10 +59,10 @@
         				<br>
 
         				<label>Password</label><br>
-        				<input type="password" name="user_password" class="form-control" required>
+        				<input type="password" name="member_password" class="form-control" required>
 
         				<label>Confirm Password</label><br>
-        				<input type="password" name="confirm_user_password" class="form-control" required>
+        				<input type="password" name="confirm_member_password" class="form-control" required>
 
         				<hr>
 

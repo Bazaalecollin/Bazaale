@@ -11,13 +11,13 @@
                         <a class="nav-link" href="">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href=" ">District</a>
+                        <a class="nav-link" href="Districts.php ">Districts</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="register.php">Register</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="list_of_users.php">Members</a>
+                        <a class="nav-link" href="list-members.php">Members</a>
                     </li>
                 </ul>
             </div>

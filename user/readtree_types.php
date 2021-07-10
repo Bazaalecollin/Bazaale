@@ -2,7 +2,7 @@
 
 require('sql-connection.php');
 
-$results = $sql_connection->query("SELECT ID,NAME FROM districts ORDER BY ID DESC");
+$results = $sql_connection->query("SELECT ID,NAME FROM tree_types ORDER BY ID ");
 
 foreach ($results as $key => $value) {
 

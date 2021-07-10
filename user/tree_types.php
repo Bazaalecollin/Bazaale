@@ -13,18 +13,18 @@
         <main class="py-4">
             <div class="container">
 
-            	<h2>Districts</h2>
+            	<h2>Tree_types</h2>
             	<hr>
 
-            	<form method="POST" action="save-district.php">
+            	<form method="POST" action="save-tree_types.php">
 
             		<div class="row">
             			<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
 
             				<label>Name</label><br>
-            				<input type="text" name="district_name" class="form-control">
+            				<input type="text" name="tree_types_name" class="form-control">
             				<hr>
-            				<button type="submit" class="btn btn-success">Save district</button>
+            				<button type="submit" class="btn btn-success">Save tree_types</button>
 
             			</div>
             			<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
@@ -42,7 +42,7 @@
             		</thead>
 
             		<tbody>
-            			 <?php require('readthedistrict.php') ?>
+            			 <?php require('readtree_types.php') ?>
             		</tbody>
             	</table>
 

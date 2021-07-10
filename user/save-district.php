@@ -1,11 +1,10 @@
 <?php
 require('sql-connection.php');
-
+	
 if (!isset($_POST['district_name'])) {
-	echo "Name is not set";
+	echo "Name doesnot exist";
 	exit();
 }
-
 
 $d_name = $_POST['district_name'];
 
