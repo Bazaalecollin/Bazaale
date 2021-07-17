@@ -12,6 +12,8 @@ $serviceCode = $_POST['serviceCode'];
 
 $inputArray = explode("*", $textFromUser);
 
+$level = count($inputArray);
+
 if (empty($textFromUser)) {
 	
 	$response = " CON  Welcome to the Archives Limited";
