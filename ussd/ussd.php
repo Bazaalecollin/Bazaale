@@ -20,7 +20,7 @@ if (empty($textFromUser)) {
 
 	$response = "\n 2. Add a city";
 
-echo $response;
+    echo $response;
 
 }else{
 
