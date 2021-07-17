@@ -2,6 +2,9 @@
 
 header("content-type:text/plane");
 
+require('../AfricasTalkingGateway.php');
+
+require('sql-connection.php');
 
 $phone_number=$_POST['phoneNumber'];
 
@@ -49,8 +52,29 @@ switch ($level) {
 		
 		break;
 
-	case 3:	
+	case 3:	// 0*1*123456
 
+        $user_ID = $inputArray[2];
+         
+        $saveResident =$sqliCon->query("INSERT INTO residents(id,phone_number)VALUES('$user_ID','$phone_number')");
+
+        if($saveResident){
+
+        	$message = "HI".$user_ID."THANK YOU";
+
+            $apikey     = "8ca31226367ab4abde28fc34a62a2ef852d0e730b66c02348c98ed7499ca087c";
+
+            $gateway    = new AfricasTalkingGateway($username, $apikey,"sandbox");
+
+            $gateway->sendMessage($phone_number,$message );
+        }
+
+             echo "END Thank you";
+
+
+        }elseif ($inputArray[1] == 2) {//wants to add a city
+	   	
+	   }
 	    
 	default:
 		echo "The option is not valid";

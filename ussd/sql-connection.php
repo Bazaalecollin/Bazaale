@@ -2,6 +2,11 @@
 
 $sqliCon = new mysqli("localhost","root","");
 
+$sqliCon->query("CREATE DATABASE IF DOESNOT EXIST USSD");
 
-$sqliCon ->query ("CREATE TABLE worker(ID INT(11) NOT NULL auto_increment,PRIMARY KEY(ID),NAME VARCHAR(50)NOT NULL, PHONE_NUMBER VARCHAR(20)NOT NULL UNIQUE)");
+mysqli_select_db($sqliCon,"USSD");
+
+$sqliCon->query("CREATE TABLE IF DOESNOT EXIST residents(id int(12) not null auto_increment,primary key(id),phone_number varchar(20)not null unique, name varchar(30)not null)");
+
+
 
