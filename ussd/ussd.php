@@ -46,18 +46,6 @@ switch ($level) {
 
 
 
-if (empty($textFromUser)) {
-	
-	$response = "CON Welcome to Archives Limited";
-
-	$response  .= "\n 1. Register";
-
-	$response .= "\n 2. add city";
-
-	echo $response ;
-}else{
-	echo " END we have", $textFromUser;
-}
 
 
 
