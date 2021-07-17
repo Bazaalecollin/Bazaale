@@ -35,7 +35,14 @@ switch ($level) {
 
 	case 2:
 
-	  
+	   if ($inputArray[1] -- 1) {//wants to register//
+         echo "CON provide ID_number";
+	   	
+	   }elseif ($inputArray[1] -- 2) {//wants to add a city
+	   	
+	   }else{
+	   	echo "END inalid";
+	   }
 
 	   echo "CON AT INDEX 0=".$inputArray[0]."\n INDEX 1 =".$inputArray[1];
 
