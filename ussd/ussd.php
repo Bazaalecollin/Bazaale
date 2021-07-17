@@ -36,7 +36,7 @@ switch ($level) {
 	case 2:
 
 	   if ($inputArray[1] -- 1) {//wants to register//
-         echo "CON provide ID_number";
+         echo "CON what is name";
 	   	
 	   }elseif ($inputArray[1] -- 2) {//wants to add a city
 	   	
