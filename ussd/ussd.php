@@ -12,15 +12,14 @@ $serviceCode = $_POST['serviceCode'];
 
 $inputArray = explode("*", $textFromUser);
 
-$level = count($inputArray);
 
 if (empty($textFromUser)) {
 	
 	$response = " CON  Welcome to the Archives Limited";
 
-	$response = "\n 1. Register";
+	$response .= "\n 1. Register";
 
-	$response = "\n 2. Add a city";
+	$response .= "\n 2. Add a city";
 
     echo $response;
 
