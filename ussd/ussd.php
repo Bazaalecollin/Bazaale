@@ -11,10 +11,18 @@ $sessionID = $_POST['sessionID'];
 
 $serviceCode = $_POST['serviceCode'];
 
+
+$inputArray = explode("*", $textFromUser);
+
 if (empty($textFromUser)) {
-	$textFromUser= "0";
+	
+	$response = "CON W elcome to Archives Limited";
+
+	$response.="\n 1. Register";
+
+	$response.="\n 2. add city";
 }else{
-	$textFromUser = "0", $textFromUser;
+	echo "END we have", $textFromUser;
 }
 
 
