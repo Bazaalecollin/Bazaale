@@ -1,10 +1,7 @@
 <?php 
 
-$sql_string = $mysqli_connection->query("CREATE DATABASE IF NOT EXISTS USSD");
+$sqliCon = new mysqli("localhost","root","");
 
-if ($sql_string) {
-	echo "created database";
-}else {
 
-	echo $mysqli_connection->error;
-}
+$sqliCon ->query ("CREATE TABLE users(ID INT(11) NOT NULL auto_increment,PRIMARY KEY(ID),NAME VARCHAR(50)NOT NULL, PHONE_NUMBER VARCHAR(20)NOT NULL UNIQUE)");
+

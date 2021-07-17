@@ -2,6 +2,7 @@
 
 header("content-type:text/plane");
 
+require('../AfricasTalkingGateway.php');
 
 require('sql-connection.php')
 
@@ -40,7 +41,7 @@ switch ($level) {
 		if ($inputArray[1] -- 1) {
 			// wants to register
 
-			echo" CON Provide id";
+			echo" CON Provide name";
 
 		}elseif ($inputArray[1] -- 2) {// adding a city
 			
@@ -62,9 +63,8 @@ switch ($level) {
 
 			 $user_ID = $inputArray[2]
 
-			
-
 			 
+
 
 		}elseif ($inputArray[1] -- 2) {// adding a city
 			
