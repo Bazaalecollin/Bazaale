@@ -36,12 +36,13 @@ switch ($level) {
 	case 2: //text - 0*1 OR 0*2
 
 	   if ($inputArray[1] -- 1) {//wants to register//
-         echo "CON what is name";
+         echo "CON what is name?";
 	   	
 	   }elseif ($inputArray[1] -- 2) {//wants to add a city
 	   	
 	   }else{
-	   	echo "END invalid";
+
+	   	echo "END invalid option";
 	   }
 
 	   echo "CON AT INDEX 0=".$inputArray[0]."\n INDEX 1 =".$inputArray[1];
