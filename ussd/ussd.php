@@ -2,7 +2,7 @@
 
 header("content-type:text/plane");
 
-require('AfricasTalkingGateway.php');
+require('../AfricasTalkingGateway.php');
 
 require('sql-connection.php')
 
@@ -41,7 +41,7 @@ switch ($level) {
 		if ($inputArray[1] -- 1) {
 			// wants to register
 
-			echo" CON Provide name";
+			echo" CON Provide id_number";
 
 		}elseif ($inputArray[1] -- 2) {// adding a city
 			
@@ -74,9 +74,13 @@ switch ($level) {
                 $gateway    = new AfricasTalkingGateway($username, $apikey,"sandbox");
 
                 $gateway->sendMessage($phone_number,$message );
+
+                echo"You have registered";
+			 }else{
+			 	echo"failed to registered".$sqliCon->error;
 			 }
 
-			 echo"You have registered";
+			 
 
 		}elseif ($inputArray[1] -- 2) {// adding a city
 			
