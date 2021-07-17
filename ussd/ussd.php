@@ -54,9 +54,12 @@ switch ($level) {
 
 	case 3:	// 0*1*123456
 
+	    if ($inputArray[1] == 1) {//wants to register//
+
+
            $user_ID = $inputArray[2];
          
-            $saveResident =$sqliCon->query("INSERT INTO residents(id,phone_number)VALUES('$user_ID','$phone_number')");
+            $saveResident = $sqliCon->query("INSERT INTO residents(id,phone_number)VALUES('$user_ID','$phone_number')");
 
            if($saveResident){
 
