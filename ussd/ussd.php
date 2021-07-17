@@ -10,6 +10,8 @@ $sessionID = $_POST['sessionID'];
 
 $serviceCode = $_POST['serviceCode'];
 
+echo "CON Welcome to the Archives";
+
 $inputArray = explode("*", $textFromUser);
 
 if (empty($textFromUser)) {
