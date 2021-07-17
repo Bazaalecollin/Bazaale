@@ -10,9 +10,9 @@ require('sql-connection.php');
 <body>
 
 	<?php
-	  $user_id = $_GET['district_id'];
+	  $district_id = $_GET['district_id'];
 
-	  $this_user = $connection->query("SELECT * FROM districts WHERE ID = $districts_id "); 
+	  $this_district = $connection->query("SELECT * FROM districts WHERE ID = $districts_id "); 
 
 	  $record = $this_district->fetch_assoc();
 	 ?>

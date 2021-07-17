@@ -10,14 +10,14 @@ require('sql-connection.php');
 <body>
 
 	<?php
-	  $user_id = $_GET['members_id'];
+	  $members_id = $_GET['members_id'];
 
-	  $this_user = $connection->query("SELECT * FROM members WHERE ID = $members_id "); 
+	  $this_members = $connection->query("SELECT * FROM members "); 
 
 	  $record = $this_member->fetch_assoc();
 	 ?>
 
-	<form method="POST" action="update_user_data.php">
+	<form method="POST" action="update-members.php">
 
 		<label>Name: </label>
 		<input type="text" value="<?php echo $record['NAME'] ?>" name="name_of_member">

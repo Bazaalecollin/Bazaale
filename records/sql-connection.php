@@ -1,0 +1,13 @@
+<?php
+
+$sql_connection = new mysqli("localhost","root","","RECORDS");
+
+
+$sql_connection->query("CREATE TABLE  IF NOT EXISTS districts(ID INT(11) NOT NULL AUTO_INCREMENT,PRIMARY KEY(ID),NAME VARCHAR(12)NOT NULL UNIQUE)");
+
+
+$sql_connection->query("CREATE TABLE IF NOT EXISTS resident(NAME VARCHAR(20)NOT NULL,date-of-birth DATE NOT NULL, HOUSE_NUMBER(12)NOT NULL, village_NAME VARCHAR(20)NOT NULL, ID INT(12)NOT NULL,districts_ID INT(11)NOT NULL, FOREIGN KEY(districts_ID) REFERENCES districts(ID), FOREIGN KEY(village_NAME) REFERENCES village(NAME))");
+
+$sql_connection->query("CREATE TABLE  IF NOT EXISTS village(ID INT(11) NOT NULL AUTO_INCREMENT,PRIMARY KEY(ID),NAME VARCHAR(12)NOT NULL UNIQUE)");
+
+
