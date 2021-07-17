@@ -14,7 +14,7 @@ $inputArray = explode("*", $textFromUser);
 
 if (empty($textFromUser)) {
 	
-	$response = "CON Welcome to the Archives Limited";
+	$response = " CON  Welcome to the Archives Limited";
 
 	$response = "\n 1. Register";
 
@@ -24,5 +24,5 @@ if (empty($textFromUser)) {
 
 }else{
 
-	echo "END we have" .$textFromUser;
+	echo " END  we have" .$textFromUser;
 }
