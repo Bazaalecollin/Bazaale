@@ -14,6 +14,38 @@ $serviceCode = $_POST['serviceCode'];
 
 $inputArray = explode("*", $textFromUser);
 
+$level = count($inputArray);
+
+switch ($level) {
+	case 0:
+	  $response = "CON Welcome to Archives Limited";
+
+	  $response  .= "\n 1. Register";
+
+	  $response .= "\n 2. add city";
+
+	  echo $response ;
+
+		break;
+
+	case 1:
+		
+		break;
+
+	case 2:	
+	
+	default:
+		echo "The option is not valid";
+		break;
+}
+
+
+
+
+
+
+
+
 if (empty($textFromUser)) {
 	
 	$response = "CON Welcome to Archives Limited";
@@ -26,6 +58,8 @@ if (empty($textFromUser)) {
 }else{
 	echo " END we have", $textFromUser;
 }
+
+
 
 
 
