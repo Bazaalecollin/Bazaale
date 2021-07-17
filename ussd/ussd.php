@@ -37,7 +37,7 @@ switch ($level) {
 
 	   if ($inputArray[1] == 1) {//wants to register//
 
-           echo "CON what is name?";
+           echo "CON what is ID_number?";
 	   	
 	   }elseif ($inputArray[1] == 2) {//wants to add a city
 	   	
@@ -50,7 +50,8 @@ switch ($level) {
 		break;
 
 	case 3:	
-	
+
+	    
 	default:
 		echo "The option is not valid";
 		break;
