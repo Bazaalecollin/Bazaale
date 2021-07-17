@@ -33,13 +33,13 @@ switch ($level) {
 
 		break;
 
-	case 2: //text - 0*1 OR 0*2
+	case 2:   //text - 0*1 OR 0*2
 
-	   if ($inputArray[1] -- 1) {//wants to register//
+	   if ($inputArray[1] == 1) {//wants to register//
 
-         echo "CON what is name?";
+           echo "CON what is name?";
 	   	
-	   }elseif ($inputArray[1] -- 2) {//wants to add a city
+	   }elseif ($inputArray[1] == 2) {//wants to add a city
 	   	
 	   }else{
 
