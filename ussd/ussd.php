@@ -2,9 +2,6 @@
 
 header("content-type:text/plane");
 
-require('../AfricasTalkingGateway.php');
-
-require('sql-connection.php')
 
 $phone_number=$_POST['phoneNumber'];
 
@@ -41,7 +38,7 @@ switch ($level) {
 		if ($inputArray[1] -- 1) {
 			// wants to register
 
-			echo" CON Provide name";
+			echo" CON Provide ID_number";
 
 		}elseif ($inputArray[1] -- 2) {// adding a city
 			
