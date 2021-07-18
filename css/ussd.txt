@@ -1,0 +1,19 @@
+$saveworker=$sqliCon->query("INSERT INTO worker(id,phone_number) VALUES('$user_id','$phone_number')");
+
+			 if ($saveworker) {
+			 	
+			 	$message = "Hi".$user_ID."You have registered with Archives Limited";
+            
+                $apikey     = "8ca31226367ab4abde28fc34a62a2ef852d0e730b66c02348c98ed7499ca087c";
+
+                $gateway    = new AfricasTalkingGateway($username, $apikey,"sandbox");
+
+                $gateway->sendMessage($phone_number,$message );
+
+                echo"You have registered";
+			 }
+that is for ussd.php
+this is for sql-connection
+$sqliCon = new mysqli("localhost","root",".R9qdAE+Pse(K7JA");
+
+$sqliCon->query("CREATE DATABASE IF DOESNOT EXIST USSD")
